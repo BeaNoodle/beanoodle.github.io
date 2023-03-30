@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
     <style>
-    @font-face { font-family: “Sazanami Gothic”; src: url(‘https://dl.dropboxusercontent.com/s/wy2q8u8cenna5ha/default.ttf’);}
+    @font-face { font-family: “Sazanami Gothic”; src: url(‘default.ttf’);}
     .grid{
     display:flex;
     justify-content: center;
@@ -17,14 +18,19 @@
     font-size: 18pt;
     }
     html {
-    background: url('https://64.media.tumblr.com/a1b4da91e18bdfb9aa08fd6677974e61/c397b898e7d64082-dc/s1280x1920/8393c073757cd295533d532d2faab06e9cd9270c.pnj')no-repeat center center fixed;
+    background: url('Images/Background.png')no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
     }
 
     .grid-container {
     display: grid;
     grid-template-columns: 384px 384px 384px;
-    margin-left: -50px;
+    justify-content: center;
     }
 
     .menu-container {
@@ -41,14 +47,14 @@
 <body>
 <article class = "grid">
     <div class="container">
-        <a href="https://Twitter.com/Yorha2Bea"><img src="https://64.media.tumblr.com/4cd564d210a64d01439f9fc4cf7e7dde/f107e53cfa18b755-f5/s1280x1920/b4e1d8524ec9e0e5a0b4a2687fc1396b32c0ce18.pnj" align="bottom" width="629" height="210"/></a>
+        <a href="https://Twitter.com/Yorha2Bea"><img src="Images/Logo.png" align="bottom" width="629" height="210"/></a>
         <br>
         </br>
         <div class="menu-container">
-            <div class="menu-item"><a href="#Introduction"><img src="https://64.media.tumblr.com/ce0f079dcdd8b7ba9fbb956cc67e46be/f107e53cfa18b755-f6/s500x750/20dfe8016eb8f6d5e6fb5c7fa361a1b3889e484a.pnj" width="492" height="82"/></a></div>
-            <div class="menu-item"><a href="#Official-Releases"><img src="https://64.media.tumblr.com/c50e44a9500b8ce15b52c514a0246388/f107e53cfa18b755-4d/s500x750/1965ba74900098268fb799394d72f17686156581.pnj" width="492" height="79"/></a></div>
-            <div class="menu-item"><a href="#Fan-Translations-Mods"><img src="https://64.media.tumblr.com/6c5ea99dcd470b3378fc8bf3fd76df24/f107e53cfa18b755-ac/s500x750/e812a2c5a023260ccc3d662f6fd9119bdc9adea7.pnj" width="492" height="82"/></a></div>  
-            <div class="menu-item"><a href="#Choosing"><img src="https://64.media.tumblr.com/d3591394a39a160f426d79a93c4eb31f/f107e53cfa18b755-9d/s500x750/2cda28ae65911dfdd5549864adfd852a09370758.pnj" width="492" height="82"/></a></div>
+            <div class="menu-item"><a href="#Introduction"><img src="Images/Introduction.png" width="492" height="82"/></a></div>
+            <div class="menu-item"><a href="#Official-Releases"><img src="Images/OfficialReleases.png" width="492" height="79"/></a></div>
+            <div class="menu-item"><a href="#Fan-Translations-Mods"><img src="Images/FanTranslations&Mods.png" width="492" height="82"/></a></div>  
+            <div class="menu-item"><a href="#Choosing"><img src="Images/Choosing.png" width="492" height="82"/></a></div>
         </div>
 
         <p> This site was just thrown together as an easy way to explain the many versions of Umineko (In English) and how they differ from each other. This page is mostly finished, but there are still some things I want to add and tweak. If you have any feedback, changes, or inclusions for me to add to the site, then please don’t be afraid to DM me about it.</p>
@@ -80,9 +86,9 @@
         <p>There are many options for what version of Umineko to actually read. Below, there are 3 sprite styles, clicking on one will show you the diffrent options for reading with the chosen style.</p>
         <p>Currently, this feature is a work in progress, but all the information would be stuff already on this page.</p>
         <div class="grid-container">
-            <div class="grid-item"><a href=""><img src="https://64.media.tumblr.com/99a13595081c2442cfeba0f33331fbfd/f107e53cfa18b755-51/s1280x1920/3be45998958a3fffb93e298f04b5639b601e683a.pnj" width="384" height="384"/></a></div>
-            <div class="grid-item"><a href=""><img src="https://64.media.tumblr.com/77c6526b2abc92834d13fa493b9b14c6/f107e53cfa18b755-16/s1280x1920/47af0097dd9fb760d69d542d5394c56d601e72c8.pnj" width="384" height="384"></a></div>
-            <div class="grid-item"><a href=""><img src="https://64.media.tumblr.com/9e775b3de187abab11cc528e9361f691/f107e53cfa18b755-ca/s1280x1920/ee207c330ae0aba4b61746685e6517aef2f4e039.pnj" width="384" height="384"></a></div>  
+            <div class="grid-item"><a href=""><img src="Images/Original.png" width="384" height="384"/></a></div>
+            <div class="grid-item"><a href=""><img src="Images/Console.png" width="384" height="384"></a></div>
+            <div class="grid-item"><a href=""><img src="Images/Pachinko.png" width="384" height="384"></a></div>  
         </div>
     </div>
 </article>
