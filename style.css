@@ -1,0 +1,80 @@
+@font-face { font-family: “Sazanami Gothic”; src: url(‘default.ttf’);}
+.grid{
+display:flex;
+justify-content: center;
+/* align-items: center; */
+min-height: 90vh;
+}
+
+.container {
+line-break: auto;
+width: 50%;
+color:white;
+font-family: "Sazanami Gothic";
+font-size: 18pt;
+}
+
+html {
+background: url('Images/MainBackground.png')no-repeat center center fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 384px 384px 384px;
+justify-content: center;
+}
+
+.menu-container {
+display: grid;
+grid-template-columns: auto;
+padding: 5px;
+}
+.menu-item {
+padding: 5px;
+}
+
+.dropbtn {
+display: grid;
+background: none;
+color: white;
+padding: 10px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: purple;
+}
+
+.dropdown {
+/* position: relative; */
+display:contents;
+}
+
+.dropdown-content {
+display: none;
+position: relative;
+/* background-color: #f1f1f1; */
+width:fit-content;
+overflow: auto;
+/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: purple;}
+
+.show {display: block;}
