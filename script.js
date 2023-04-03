@@ -9,3 +9,7 @@ function mediaList() {
 function umineko() {
     document.getElementById("uminekoDropdown").classList.toggle("show");
 }
+
+function help() {
+    document.getElementById("aboutMeDropdown").classList.toggle("show");
+}
