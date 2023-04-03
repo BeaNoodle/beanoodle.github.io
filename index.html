@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link rel="stylesheet" href="style.css">
+<head>
+<title>BeaSite</title>
+<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <article class = "grid">
     <div class="container">
-        <title>BeaSite</title>
+        <h1 style="text-align: center; font-size: 50px;">BeaSite</h1>
+        <div class="dropdown">
+            <button onclick="help()" class="dropbtn">About me:</button>
+            <div id="aboutMeDropdown" class="dropdown-content">
+                <p>My name is Bea.</p>
+                <p>I have a lot of interest and don't feel like writing them out atm so just look at the media list below.</p>
+            </div>
+        </div>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">My socials:</button>
             <div id="myDropdown" class="dropdown-content">
                 <a>Discord: BeaNoodle#5912</a>
+                <a>VRChat: BeaNoodle</a>
                 <a href="https://Twitter.com/YoRHa2Bea">Twitter</a>
                 <a href="https://www.tumblr.com/blog/beanoodl3">Tumblr</a>
                 <a href="https://steamcommunity.com/id/BeaNoodle">Steam</a>
@@ -31,6 +41,7 @@
             <div id="uminekoDropdown" class="dropdown-content">
                 <p>An introduction and guide I made for getting into Umineko, and documenting the different releases of the VN. </p>
                 <a href="UminekoGuide/UminekoGuide.html">(Guide)</a>
+                <a href="https://read-umineko.tumblr.com">(Tumblr Version)</a>
             </div>
         </div>
         <script src="script.js"></script> 
