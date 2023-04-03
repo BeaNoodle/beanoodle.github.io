@@ -1,17 +1,19 @@
+body {font-family: Helvetica, sans-serif;}
 @font-face { font-family: “Sazanami Gothic”; src: url(‘default.ttf’);}
 .grid{
 display:flex;
 justify-content: center;
 /* align-items: center; */
-min-height: 90vh;
+/* min-height: 90vh; */
 }
 
 .container {
 line-break: auto;
 width: 50%;
 color:white;
-font-family: "Sazanami Gothic";
-font-size: 18pt;
+font-family: "Helvetica";
+/* font-family: "Sazanami Gothic"; */
+/* font-size: 18pt; */
 }
 
 html {
@@ -35,16 +37,18 @@ display: grid;
 grid-template-columns: auto;
 padding: 5px;
 }
+
 .menu-item {
 padding: 5px;
 }
 
 .dropbtn {
 display: grid;
+grid-template: auto;
 background: none;
 color: white;
 padding: 10px;
-font-size: 20px;
+font-size: 50px;
 border: none;
 cursor: pointer;
 }
@@ -59,6 +63,7 @@ display:contents;
 }
 
 .dropdown-content {
+font-size: 30px;
 display: none;
 position: relative;
 /* background-color: #f1f1f1; */
