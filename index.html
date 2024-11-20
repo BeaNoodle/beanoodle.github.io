@@ -10,14 +10,14 @@
     <div class="container">
         <h1 style="text-align: center; font-size: 50px;">BeaSite</h1>
         <div class="dropdown">
-            <button onclick="help()" class="dropbtn">About me:</button>
+            <button onclick="drop(this)" class="dropbtn">About me:</button>
             <div id="aboutMeDropdown" class="dropdown-content">
                 <p>My name is Bea.</p>
                 <p>I have a lot of interest and don't feel like writing them out atm so just look at the media list below.</p>
             </div>
         </div>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">My socials:</button>
+            <button onclick="drop(this)" class="dropbtn">My socials:</button>
             <div id="myDropdown" class="dropdown-content">
                 <a>Discord: beanoodle</a>
                 <a>VRChat: BeaNoodle</a>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="dropdown">
-            <button onclick="mediaList()" class="dropbtn">Media list:</button>
+            <button onclick="drop(this)" class="dropbtn">Media list:</button>
             <div id="mediaDropdown" class="dropdown-content">
                 <a href="https://www.last.fm/user/BeaNoodle">last.fm</a>
                 <a href="https://anilist.co/user/BeaNoodle/">AniList</a>
@@ -40,16 +40,21 @@
         </div>
         
         <div class="dropdown">
-            <button onclick="umineko()" class="dropbtn">Umineko guide:</button>
+            <button onclick="drop(this)" class="dropbtn">Umineko guide:</button>
             <div id="uminekoDropdown" class="dropdown-content">
                 <p>An introduction and guide I made for getting into Umineko, and documenting the different releases of the VN. </p>
                 <a href="guide">(Guide)</a>
                 <a href="https://read-umineko.tumblr.com">(Tumblr Version)</a>
             </div>
         </div>
-        <script src="script.js"></script>
 
+        <div class="dropdown">
+            <button onclick="straw()" class="dropbtn">Ask me anything:</button>
+        </div>
+        <script src="script.js"></script>
     </div>
+    <iframe id="strawPage" src="https://beanoodle.straw.page?template=true&amp;embed=true" loading="lazy" style="overflow: scroll; display: none; height: 550px; width: 600px; border:none"></iframe></iframe>
+</div>
 </article>
 </body>
-</html>
+</html
