@@ -1,15 +1,12 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}    
+document.getElementById("strawPage").style.display = "none"
+function drop(temp){var o = temp.parentElement.children[1].id.toString();document.getElementById(o).classList.toggle("show");}
 
-function mediaList() {
-    document.getElementById("mediaDropdown").classList.toggle("show");
-}
-
-function umineko() {
-    document.getElementById("uminekoDropdown").classList.toggle("show");
-}
-
-function help() {
-    document.getElementById("aboutMeDropdown").classList.toggle("show");
+function straw()
+{
+    var x = document.getElementById("strawPage");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
