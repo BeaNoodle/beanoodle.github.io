@@ -49,6 +49,10 @@
         </div>
 
         <div class="dropdown">
+            <button onclick="openLink('https://ko-fi.com/beanoodle')" class="dropbtn">Support me: Ko-fi:</button>
+        </div>
+
+        <div class="dropdown">
             <button onclick="straw()" class="dropbtn">Ask me anything:</button>
         </div>
 <!--         <script src="script.js"></script> -->
@@ -64,6 +68,13 @@
                 } else {
                     x.style.display = "none";
                 }
+            }
+
+            function openLink(url){
+                const a = document.createElement('a');
+                a.href = url;
+                a.target = '_blank'; // '_blank' opens the link in a new tab
+                a.click();
             }
         </script>
     </div>
