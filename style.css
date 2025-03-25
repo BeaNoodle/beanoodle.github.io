@@ -12,7 +12,7 @@ height: 100vh;
 /* backdrop-filter: blur(3px); */
 }
 
-.player
+#player
 {
 z-index: 0;
 height: 100%;
