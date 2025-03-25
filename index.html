@@ -6,82 +6,108 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<article class = "grid">
-    <div class="container">
-        <h1 style="text-align: center; font-size: 50px;">BeaSite</h1>
-        <div class="dropdown">
-            <button onclick="drop(this)" class="dropbtn">About me:</button>
-            <div id="aboutMeDropdown" class="dropdown-content">
-                <p>Hi, my name is Bea (real name). I usually go by Bea/BeaNoodle or YoRHa2Bea(pee) online.</p>
-                <p>I have a lot of interests, but my main hobbies are centered around collecting (games, figures/plushies, manga, music, etc) and amateur programming.</p>
-                <p>I partuiculary love retro games and visual novels. If you want to see my likes in more details, refer to my socials and media lists below!!!!</p>
+<div class="main">
+    <!-- background video -->
+    <video autoplay muted loop class="player">
+        <source src="demo.mp4" type="video/mp4">
+    </video>
+
+    <article class="grid">
+        <div class="container">
+            <h1 style="font-size: 50px;">BeaSite</h1>
+            
+            <!-- about me -->
+            <div class="dropdown">
+                <button onclick="drop(this)" class="dropbtn">About me:</button>
+                <div id="aboutMeDropdown" class="dropdown-content">
+                    <p>Hi, my name is Bea (real name). I usually go by Bea/BeaNoodle or YoRHa2Bea(pee) online.</p>
+                    <p>I have a lot of interests, but my main hobbies are centered around collecting (games, figures/plushies, manga, music, etc) and amateur programming.</p>
+                    <p>I partuiculary love retro games and visual novels. If you want to see my likes in more details, refer to my socials and media lists below!!!!</p>
+                </div>
+            </div>
+
+            <!-- social -->
+            <div class="dropdown">
+                <button onclick="drop(this)" class="dropbtn">My socials:</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a>VRChat: BeaNoodle</a>
+                    <a href="https://Twitter.com/YoRHa2Pee">Twitter</a>
+                    <a href="https://bsky.app/profile/umineko.gay">Bluesky</a>
+                    <a href="https://www.tumblr.com/blog/beanoodl3">Tumblr</a>
+                    <a href="https://steamcommunity.com/id/BeaNoodle">Steam</a>
+                    <a href="https://github.com/BeaNoodle">GitHub</a>
+                </div>
+            </div>
+
+            <!-- media -->
+            <div class="dropdown">
+                <button onclick="drop(this)" class="dropbtn">Media list:</button>
+                <div id="mediaDropdown" class="dropdown-content">
+                    <a href="https://www.last.fm/user/BeaNoodle">last.fm</a>
+                    <a href="https://anilist.co/user/BeaNoodle/">AniList</a>
+                    <a href="https://myfigurecollection.net/profile/BeaNoodle">MyFigureCollection</a>
+                    <a href="https://www.backloggd.com/u/BeaNoodle/">Backloggd</a>
+                    <a href="https://letterboxd.com/BeaNoodl3/">Letterboxd</a>
+                    <a href="https://vndb.org/u231536">VNDB</a>
+                </div>
+            </div>
+
+            <!-- umineko -->
+            <div class="dropdown">
+                <button onclick="drop(this)" class="dropbtn">Umineko guide:</button>
+                <div id="uminekoDropdown" class="dropdown-content">
+                    <p>An introduction and guide I made for getting into Umineko, and documenting the different releases of the VN. </p>
+                    <a href="guide">(Guide)</a>
+                    <a href="https://read-umineko.tumblr.com">(Tumblr Version)</a>
+                </div>
+            </div>
+
+            <!-- ko-fi -->
+            <div class="dropdown">
+                <button onclick="openLink('https://ko-fi.com/beanoodle')" class="dropbtn">Ko-fi - Support me:</button>
+            </div>
+
+            <!-- strawPage -->
+            <div class="dropdown">
+                <button onclick="straw()" class="dropbtn">Ask me anything:</button>
             </div>
         </div>
-        <div class="dropdown">
-            <button onclick="drop(this)" class="dropbtn">My socials:</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a>VRChat: BeaNoodle</a>
-                <a href="https://Twitter.com/YoRHa2Pee">Twitter</a>
-                <a href="https://bsky.app/profile/umineko.gay">Bluesky</a>
-                <a href="https://www.tumblr.com/blog/beanoodl3">Tumblr</a>
-                <a href="https://steamcommunity.com/id/BeaNoodle">Steam</a>
-                <a href="https://github.com/BeaNoodle">GitHub</a>
-            </div>
-        </div>
 
-        <div class="dropdown">
-            <button onclick="drop(this)" class="dropbtn">Media list:</button>
-            <div id="mediaDropdown" class="dropdown-content">
-                <a href="https://www.last.fm/user/BeaNoodle">last.fm</a>
-                <a href="https://anilist.co/user/BeaNoodle/">AniList</a>
-                <a href="https://myfigurecollection.net/profile/BeaNoodle">MyFigureCollection</a>
-                <a href="https://www.backloggd.com/u/BeaNoodle/">Backloggd</a>
-                <a href="https://letterboxd.com/BeaNoodl3/">Letterboxd</a>
-                <a href="https://vndb.org/u231536">VNDB</a>
-            </div>
+        <div style="z-index: 100;">
+            <iframe id="strawPage" src="https://beanoodle.straw.page?template=true&amp;embed=true" loading="lazy" style="overflow: scroll; display: none; height: 550px; width: 600px; border:none"></iframe>
+            <button onclick="openLink('https://beanoodle.straw.page/?template=true&embed=true')" id="frame" style="width: 100%;">open in new tab</button>
         </div>
-        
-        <div class="dropdown">
-            <button onclick="drop(this)" class="dropbtn">Umineko guide:</button>
-            <div id="uminekoDropdown" class="dropdown-content">
-                <p>An introduction and guide I made for getting into Umineko, and documenting the different releases of the VN. </p>
-                <a href="guide">(Guide)</a>
-                <a href="https://read-umineko.tumblr.com">(Tumblr Version)</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button onclick="openLink('https://ko-fi.com/beanoodle')" class="dropbtn">Ko-fi - Support me:</button>
-        </div>
-
-        <div class="dropdown">
-            <button onclick="straw()" class="dropbtn">Ask me anything:</button>
-        </div>
-<!--         <script src="script.js"></script> -->
-        <script>
-            document.getElementById("strawPage").style.display = "none"
-            function drop(temp){var o = temp.parentElement.children[1].id.toString();document.getElementById(o).classList.toggle("show");}
-
-            function straw()
-            {
-                var x = document.getElementById("strawPage");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-
-            function openLink(url){
-                const a = document.createElement('a');
-                a.href = url;
-                a.target = '_blank'; // '_blank' opens the link in a new tab
-                a.click();
-            }
-        </script>
-    </div>
-    <iframe id="strawPage" src="https://beanoodle.straw.page?template=true&amp;embed=true" loading="lazy" style="overflow: scroll; display: none; height: 550px; width: 600px; border:none"></iframe></iframe>
+    
+    </article>
 </div>
-</article>
 </body>
-</html
+<script>
+    document.getElementById("strawPage").style.display = "none";
+    document.getElementById("frame").style.display = "none";
+    
+    function drop(temp){
+        var o = temp.parentElement.children[1].id.toString();
+        document.getElementById(o).classList.toggle("show");
+    }
+
+    function straw()
+    {
+        var x = document.getElementById("strawPage");
+        var y = document.getElementById("frame");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display ="block"
+        } else {
+            x.style.display = "none";
+            y.style.display = "none"
+        }
+    }
+
+    function openLink(url){
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.click();
+    }
+</script>
+</html>
