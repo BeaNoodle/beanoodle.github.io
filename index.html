@@ -8,8 +8,8 @@
 <body>
 <div class="main">
     <!-- background video -->
-    <video autoplay muted loop playsinline="true" disablePictureInPicture="true" class="player">
-        <source src="demo.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline="true" disablePictureInPicture="true" id="player">
+        <source id="vn" src="" type="video/mp4">
     </video>
 
     <article class="grid">
@@ -84,6 +84,16 @@
 <script>
     document.getElementById("strawPage").style.display = "none";
     document.getElementById("frame").style.display = "none";
+
+    const bgVideo = ["demo.mp4", "kohaku.mp4"];
+    const randomBGVideo = bgVideo[Math.floor(Math.random() * 2)];
+
+    function loadVideo(){
+        document.getElementById("vn").src = randomBGVideo;
+        document.getElementById("player").load();
+    }
+
+    loadVideo();
     
     function drop(temp){
         var o = temp.parentElement.children[1].id.toString();
