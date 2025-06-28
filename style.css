@@ -1,5 +1,4 @@
-body {font-family: Helvetica, sans-serif;}
-@font-face { font-family: “Sazanami Gothic”; src: url(‘default.ttf’);}
+body {font-family: "Times New Roman", Times, serif;}
 .grid{
 display:flex;
 justify-content: center;
@@ -27,11 +26,13 @@ filter: blur(8px);
 
 
 .container {
+text-align: left;
 line-break: auto;
 width: 50%;
 color:white;
-font-family: "Helvetica";
+font-family: "Times New Roman", Times, serif;
 position: relative;
+text-shadow: 2px 2px 4px #000000;
 }
 
 body {
@@ -56,6 +57,8 @@ padding: 5px;
 }
 
 .dropbtn {
+text-align: left;
+font-family: "Times New Roman", Times, serif;
 display: grid;
 grid-template: auto;
 background: none;
@@ -64,6 +67,7 @@ padding: 10px;
 font-size: 50px;
 border: none;
 cursor: pointer;
+text-shadow: 2px 2px 4px #000000;
 }
 
 .dropbtn:hover, .dropbtn:focus {
